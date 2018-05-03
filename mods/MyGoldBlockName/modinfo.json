@@ -1,9 +1,0 @@
-{
-  "type": "code",
-  "name": "MyGoldBlockMod",
-  "description" : "Adds cool looking gold blocks",
-  "author": "CreativeMD",
-  "version": "1.0",
-  "gameversions": [ "1.5.0.3+" ],
-  "website": "http://example.com"
-}
