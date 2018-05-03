@@ -3,25 +3,13 @@ using Vintagestory.API.Client;
 using Vintagestory.API.Common;
 using Vintagestory.API.Server;
 
-namespace VSExampleMods
+namespace VSModLauncher
 {
     /// <summary>
     /// Redirects all log entries into the visual studio output window. Only for your convenience during development and testing.
     /// </summary>
-    public class RedirectLogs : ModBase
+    public class RedirectLogs : ModSystem
     {
-        public override ModInfo GetModInfo()
-        {
-            return new ModInfo()
-            {
-                Name = "RedirectLogs",
-                Version = "1.0",
-                GameVersions = new string[] { "1.5+" },
-                Description = "Redirecting logs to VS",
-                Author = "Tyron",
-                Website = "https://github.com/anegostudios/vsmodtemplate"
-            };
-        }
 
         public override bool ShouldLoad(EnumAppSide side)
         {
