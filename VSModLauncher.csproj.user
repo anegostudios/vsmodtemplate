@@ -15,4 +15,5 @@
   <PropertyGroup>
     <ReferencePath>$(AppData)\Vintagestory\;$(AppData)\Vintagestory\Lib\</ReferencePath>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' " />
 </Project>
