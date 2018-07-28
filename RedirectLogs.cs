@@ -18,12 +18,12 @@ namespace VSModLauncher
 
         public override void StartServerSide(ICoreServerAPI api)
         {
-            api.Server.Logger.AddListener(OnServerLogEntry);
+            api.Server.Logger.EntryAdded += OnServerLogEntry;
         }
 
         public override void StartClientSide(ICoreClientAPI api)
         {
-            api.World.Logger.AddListener(OnClientLogEntry);
+            api.World.Logger.EntryAdded += OnClientLogEntry;
         }
 
         private void OnClientLogEntry(EnumLogType logType, string message, object[] args)
