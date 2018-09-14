@@ -18,24 +18,24 @@ namespace VSModLauncher
 
         public override void StartServerSide(ICoreServerAPI api)
         {
-            api.Server.Logger.AddListener(OnServerLogEntry);
+            api.Server.Logger.EntryAdded += OnServerLogEntry;
+        }
+
+        private void OnServerLogEntry(EnumLogType logType, string message, params object[] args)
+        {
+            if (logType == EnumLogType.VerboseDebug) return;
+            System.Diagnostics.Debug.WriteLine("[Server " + logType + "] " + message, args);
         }
 
         public override void StartClientSide(ICoreClientAPI api)
         {
-            api.World.Logger.AddListener(OnClientLogEntry);
+            api.World.Logger.EntryAdded += OnClientLogEntry;
         }
 
-        private void OnClientLogEntry(EnumLogType logType, string message, object[] args)
+        private void OnClientLogEntry(EnumLogType logType, string message, params object[] args)
         {
             if (logType == EnumLogType.VerboseDebug) return;
             System.Diagnostics.Debug.WriteLine("[Client " + logType + "] " + message, args);
-        }
-
-        private void OnServerLogEntry(EnumLogType logType, string message, object[] args)
-        {
-            if (logType == EnumLogType.VerboseDebug) return;
-            System.Diagnostics.Debug.WriteLine("[Server " + logType + "] " + message, args);
         }
     }
 }
