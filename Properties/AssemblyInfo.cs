@@ -37,5 +37,5 @@ using Vintagestory.API.Common;
 [assembly: AssemblyFileVersion("1.0.0.0")]
 
 [assembly: ModDependency("game")]
-[assembly: ModInfo("RedirectLogs", "redirectlogs", Version = "1.0", Authors = new string[] { "Tyron" },
+[assembly: ModInfo("RedirectLogs", "redirectlogs", Version = "1.0.0", Authors = new string[] { "Tyron" },
         Website = "https://github.com/anegostudios/vsmodtemplate", Description = "Redirecting logs to VS", RequiredOnClient = false)]
