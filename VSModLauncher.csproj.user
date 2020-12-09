@@ -2,21 +2,18 @@
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <StartAction>Program</StartAction>
-    <StartProgram>$(VintageStoryPath)Vintagestory.exe</StartProgram>
+    <StartProgram>$(VINTAGE_STORY_PATH)\Vintagestory.exe</StartProgram>
     <StartArguments>--openWorld="modsamplestest" -pcreativebuilding --addModPath="$(SolutionDir)mods"</StartArguments>
-    <StartWorkingDirectory>$(VintageStoryPath)</StartWorkingDirectory>
+    <StartWorkingDirectory>$(VINTAGE_STORY_PATH)\</StartWorkingDirectory>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
     <StartAction>Program</StartAction>
-    <StartProgram>$(VintageStoryPath)Vintagestory.exe</StartProgram>
+    <StartProgram>$(VINTAGE_STORY_PATH)\Vintagestory.exe</StartProgram>
     <StartArguments>--openWorld="modsamplestest" -p3 --addModPath="$(SolutionDir)mods"</StartArguments>
-	<StartWorkingDirectory>$(VintageStoryPath)</StartWorkingDirectory>
+	<StartWorkingDirectory>$(VINTAGE_STORY_PATH)\</StartWorkingDirectory>
   </PropertyGroup>
-  <!--<PropertyGroup>
-    <ReferencePath>$(VintageStoryPath);$(VintageStoryPath)Lib\</ReferencePath>
-  </PropertyGroup>-->
   <PropertyGroup>
-    <ReferencePath>D:\Program Files (x86)\Vintagestory\;D:\Program Files (x86)\Vintagestory\Lib\</ReferencePath>
+    <ReferencePath>$(VINTAGE_STORY_PATH)\;$(VINTAGE_STORY_PATH)\Lib\</ReferencePath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' " />
 </Project>
