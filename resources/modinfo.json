@@ -1,0 +1,13 @@
+{
+    "type": "code",
+    "modid": "mymodid",
+    "name": "My Template Mod",
+    "authors": [
+        "Unknown"
+    ],
+    "description": "To be added",
+    "version": "1.0.0",
+    "dependencies": {
+        "game": ""
+    }
+}
