@@ -23,6 +23,18 @@
                 "${workspaceFolder}/CakeBuild/CakeBuild.csproj"
             ],
             "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build (Cake)",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "-c",
+                "Debug",
+                "${workspaceFolder}/CakeBuild/CakeBuild.csproj"
+            ],
+            "problemMatcher": "$msCompile"
         }
     ]
 }

@@ -45,6 +45,17 @@
             ],
             "console": "internalConsole",
             "stopAtEntry": false
+        },
+        {
+            "name": "CakeBuild",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build (Cake)",
+            "program": "${workspaceFolder}/CakeBuild/bin/Debug/net7.0/CakeBuild.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/CakeBuild",
+            "stopAtEntry": false,
+            "console": "internalConsole"
         }
     ]
 }
