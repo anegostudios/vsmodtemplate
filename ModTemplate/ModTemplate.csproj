@@ -29,10 +29,13 @@
     </Reference>
   </ItemGroup>
 
-<ItemGroup>
-    <Content Include="..\resources\**">
+  <ItemGroup>
+    <Content Include="assets\**">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-</ItemGroup>
+    <Content Include="modinfo.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
 
 </Project>
