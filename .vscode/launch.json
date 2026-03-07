@@ -51,7 +51,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build (Cake)",
-            "program": "${workspaceFolder}/CakeBuild/bin/Debug/net7.0/CakeBuild.dll",
+            "program": "${workspaceFolder}/CakeBuild/bin/Debug/CakeBuild.dll",
             "args": [],
             "cwd": "${workspaceFolder}/CakeBuild",
             "stopAtEntry": false,
